@@ -11,7 +11,7 @@ export default function page() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.post('http://localhost:5000/cartData', { user: userData.username }).then((res) => {
+    axios.post('https://ecommerce-ffvg.vercel.app//cartData', { user: userData.username }).then((res) => {
       setData(res.data.cart);
     })
   }, []);

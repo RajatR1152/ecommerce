@@ -36,7 +36,7 @@ export default function page() {
 
         if (user.cnfpassword === user.password) {
             document.getElementById('warning').innerText = ' ';
-            axios.post('http://localhost:5000/register', userData).then((res) => {
+            axios.post('https://ecommerce-ffvg.vercel.app/register', userData).then((res) => {
                 console.log(res);
             })
         }

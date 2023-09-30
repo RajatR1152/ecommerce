@@ -24,7 +24,7 @@ export default function page() {
     }
 
     function submit() {
-        axios.post('http://localhost:5000/login', user).then((res => {
+        axios.post('https://ecommerce-ffvg.vercel.app/login', user).then((res => {
             setUserData(res.data.data);
             router.push('/')
             setIsLogedIn(true);

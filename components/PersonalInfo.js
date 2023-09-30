@@ -26,7 +26,7 @@ export default function PersonalInfo() {
     }
 
     function submit() {
-        axios.post('http://localhost:5000/edit').then((res) => {
+        axios.post('https://ecommerce-ffvg.vercel.app/edit').then((res) => {
             console.log(res);
             setIsEdited(false);
         })

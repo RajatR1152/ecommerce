@@ -45,7 +45,7 @@ export default function page() {
 
         d.user = userData.username;
 
-        axios.post('http://localhost:5000/cart', d).then((res) => {
+        axios.post('https://ecommerce-ffvg.vercel.app/cart', d).then((res) => {
             console.log(res)
             router.push('/cart');
         })
@@ -55,7 +55,7 @@ export default function page() {
         d.user = userData.username;
 
         console.log(d);
-        axios.post('http://localhost:5000/placed', d).then((res) => {
+        axios.post('https://ecommerce-ffvg.vercel.app/placed', d).then((res) => {
             console.log(res);
             router.push('/orders');
         });
